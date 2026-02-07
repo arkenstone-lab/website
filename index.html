@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arkenstone Labs</title>
+  <style>
+    *, *::before, *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+      background: #ffffff;
+      color: #000000;
+      line-height: 1.6;
+      padding: 40px 24px;
+      font-size: 15px;
+    }
+
+    .container {
+      max-width: 860px;
+      margin: 0 auto;
+      border: 1px solid #000000;
+      outline: 3px solid #000000;
+      outline-offset: 3px;
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      min-height: calc(100vh - 80px);
+    }
+
+    @media (max-width: 640px) {
+      body {
+        padding: 16px;
+        font-size: 14px;
+      }
+
+      .container {
+        padding: 24px;
+        min-height: calc(100vh - 32px);
+      }
+    }
+
+    .header {
+      font-size: 1rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    .header a {
+      color: #000000;
+      text-decoration: none;
+    }
+
+    .main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    h1 {
+      font-family: inherit;
+      font-size: 1.2rem;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+
+    .intro p {
+      margin-bottom: 8px;
+    }
+
+    .nav {
+      margin-top: 28px;
+    }
+
+    .nav a {
+      margin-right: 20px;
+      color: #000000;
+      text-decoration: underline;
+    }
+
+    .footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    .disclaimer {
+      font-size: 0.8rem;
+      max-width: 400px;
+    }
+
+    .disclaimer p {
+      margin-bottom: 4px;
+    }
+
+    .contact {
+      text-align: right;
+      font-size: 0.8rem;
+    }
+
+    .contact p {
+      margin-bottom: 4px;
+    }
+
+    .timestamp {
+      font-size: 0.8rem;
+      margin-top: 24px;
+      opacity: 0.5;
+    }
+
+    @media (max-width: 640px) {
+      .footer {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .contact {
+        text-align: left;
+      }
+    }
+
+    a {
+      color: #000000;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <div class="header"><a href="index.html">Arkenstone Labs</a></div>
+
+    <div class="main">
+      <div class="intro">
+        <h1>What accelerates, compounds.</h1>
+        <p>Applied research studio. AI, cryptography, collective computation. We study where they converge, then build what the findings demand.</p>
+      </div>
+
+      <div class="nav">
+        <a href="projects.html">Projects</a>
+        <a href="team.html">Team</a>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="disclaimer">
+        <p>Informational only. Not an offer. Not a solicitation.</p>
+        <p>Nothing here is final. Everything compounds.</p>
+      </div>
+      <div class="contact">
+        <p><a href="mailto:contact@arkenstone-labs.com">contact@arkenstone-labs.com</a></p>
+        <p><a href="https://x.com/Arkenstone_Labs">@Arkenstone_Labs</a></p>
+        <p class="timestamp">Last indexed: 2026.02</p>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>

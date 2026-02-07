@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Team | Arkenstone Labs</title>
+  <style>
+    *, *::before, *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+      background: #ffffff;
+      color: #000000;
+      line-height: 1.6;
+      padding: 40px 24px;
+      font-size: 15px;
+    }
+
+    .container {
+      max-width: 860px;
+      margin: 0 auto;
+      border: 1px solid #000000;
+      outline: 3px solid #000000;
+      outline-offset: 3px;
+      padding: 40px;
+    }
+
+    @media (max-width: 640px) {
+      body {
+        padding: 16px;
+        font-size: 14px;
+      }
+
+      .container {
+        padding: 24px;
+      }
+    }
+
+    .header {
+      font-size: 1rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      margin-bottom: 48px;
+    }
+
+    .header a {
+      color: #000000;
+      text-decoration: none;
+    }
+
+    .back {
+      display: inline-block;
+      margin-bottom: 32px;
+      font-size: 0.8rem;
+      color: #000000;
+      text-decoration: none;
+    }
+
+    .back:hover {
+      text-decoration: underline;
+    }
+
+    h1 {
+      font-family: inherit;
+      font-size: 1.2rem;
+      font-weight: 700;
+      margin-bottom: 32px;
+    }
+
+    a {
+      color: #000000;
+      text-decoration: underline;
+    }
+
+    .team-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 24px;
+    }
+
+    .team-member {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      column-gap: 16px;
+      align-items: baseline;
+    }
+
+    .member-name {
+      font-weight: 700;
+    }
+
+    .member-details {
+      display: flex;
+      flex-direction: column;
+    }
+
+    @media (min-width: 480px) {
+      .member-details {
+        flex-direction: row;
+        gap: 12px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <div class="header"><a href="index.html">Arkenstone Labs</a></div>
+
+    <a href="index.html" class="back">&larr; Back</a>
+
+    <h1>Team</h1>
+
+    <div class="team-grid">
+      <div class="team-member">
+        <span class="member-name">Damon</span>
+        <div class="member-details">
+          <span>Co-founder, AI &amp; Applied Research (PhD)</span>
+          <span><a href="https://x.com/i_naiveai">@i_naiveai</a></span>
+        </div>
+      </div>
+
+      <div class="team-member">
+        <span class="member-name">Christopher</span>
+        <div class="member-details">
+          <span>Co-founder, Strategy &amp; Operations</span>
+          <span><a href="https://x.com/ChrisInaShell">@ChrisInaShell</a></span>
+        </div>
+      </div>
+
+      <div class="team-member">
+        <span class="member-name">Aiden</span>
+        <div class="member-details">
+          <span>Head of Engineering</span>
+          <span><a href="https://x.com/aiiiden0">@aiiiden0</a></span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>

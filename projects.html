@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects | Arkenstone Labs</title>
+  <style>
+    *, *::before, *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+      background: #ffffff;
+      color: #000000;
+      line-height: 1.6;
+      padding: 40px 24px;
+      font-size: 15px;
+    }
+
+    .container {
+      max-width: 860px;
+      margin: 0 auto;
+      border: 1px solid #000000;
+      outline: 3px solid #000000;
+      outline-offset: 3px;
+      padding: 40px;
+    }
+
+    @media (max-width: 640px) {
+      body {
+        padding: 16px;
+        font-size: 14px;
+      }
+
+      .container {
+        padding: 24px;
+      }
+    }
+
+    .header {
+      font-size: 1rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      margin-bottom: 48px;
+    }
+
+    .header a {
+      color: #000000;
+      text-decoration: none;
+    }
+
+    .back {
+      display: inline-block;
+      margin-bottom: 32px;
+      font-size: 0.8rem;
+      color: #000000;
+      text-decoration: none;
+    }
+
+    .back:hover {
+      text-decoration: underline;
+    }
+
+    h1 {
+      font-family: inherit;
+      font-size: 1.2rem;
+      font-weight: 700;
+      margin-bottom: 32px;
+    }
+
+    a {
+      color: #000000;
+      text-decoration: underline;
+    }
+
+    .project {
+      margin-bottom: 32px;
+    }
+
+    .project-name {
+      font-weight: 700;
+    }
+
+    .project p {
+      margin-top: 4px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <div class="header"><a href="index.html">Arkenstone Labs</a></div>
+
+    <a href="index.html" class="back">&larr; Back</a>
+
+    <h1>Projects</h1>
+
+    <div class="project">
+      <span class="project-name">Fission</span>
+      <p>AI-verified futarchy. Prediction markets meet machine verification.</p>
+      <p><a href="https://fission.sh">fission.sh</a></p>
+    </div>
+
+    <div class="project">
+      <span class="project-name">Miriel</span>
+      <p>Written reflection, turned into signals you can revisit and verify.</p>
+      <p><a href="https://miriel.app">miriel.app</a></p>
+    </div>
+
+  </div>
+</body>
+</html>
