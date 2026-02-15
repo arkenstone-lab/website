@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Miriel</title>
+<style>
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #ffffff;
+  color: #000000;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-size: 15px;
+  line-height: 1.6;
+  padding: 40px 24px;
+}
+
+/* Double border: outer thick, inner thin */
+.frame-outer {
+  max-width: 860px;
+  margin: 0 auto;
+  border: 3px solid #000000;
+  padding: 4px;
+}
+
+.frame-inner {
+  border: 1px solid #000000;
+  padding: 40px;
+}
+
+@media (max-width: 640px) {
+  body {
+    padding: 16px;
+    font-size: 14px;
+  }
+  .frame-inner {
+    padding: 24px;
+  }
+}
+
+/* --- Primary Optical Area: visual hook --- */
+
+.ascii {
+  overflow-x: auto;
+  white-space: pre;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-size: 0.3rem;
+  line-height: 1.05;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 640px) {
+  .ascii {
+    font-size: 0.22rem;
+  }
+}
+
+/* --- Reading gravity diagonal --- */
+
+h1 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 0.1rem;
+  line-height: 1.2;
+}
+
+.tagline {
+  font-size: 0.95rem;
+  margin-bottom: 1.25rem;
+}
+
+.explanation {
+  margin-bottom: 1.25rem;
+}
+
+.explanation p {
+  margin-bottom: 0.2rem;
+}
+
+.manifesto {
+  margin-bottom: 1.25rem;
+}
+
+.manifesto p {
+  margin-bottom: 0.15rem;
+}
+
+/* --- Terminal Area: links + closure --- */
+
+.links {
+  margin-bottom: 1.25rem;
+}
+
+.links h2 {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 0.4rem;
+}
+
+.links dl {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  row-gap: 0.2rem;
+  column-gap: 1.25rem;
+}
+
+.links dt {
+  font-size: 0.85rem;
+  white-space: nowrap;
+}
+
+.links dd {
+  font-size: 0.85rem;
+}
+
+.credit {
+  text-align: right;
+  font-size: 0.8rem;
+  margin-bottom: 1.25rem;
+}
+
+.credit p {
+  margin-bottom: 0.1rem;
+}
+
+.disclaimer {
+  border-top: 1px solid #000000;
+  padding-top: 0.75rem;
+  font-size: 0.75rem;
+}
+
+.disclaimer p {
+  margin-bottom: 0.1rem;
+}
+
+a {
+  color: #000000;
+  text-decoration: underline;
+}
+</style>
+</head>
+<body>
+<div class="frame-outer">
+<div class="frame-inner">
+
+  <pre class="ascii">                                   .:==+.=.
+                             .-=.-*-:#@#=#++.
+                               .:+++#@-.***+%++..
+                                 .=*=-+%*.:##*%*:..
+                                  .:-:.=#+@-.=@+@-#...
+                                   .-*::=*--@=.-@*.+%:
+                                     ..-=++==#@-.-%=*+
+                                           -=**##+..##=-
+                                              .:*@++.-%*.
+                                                 ..#%*.-#.
+                                                   ..#@+.*.
+                                                     .-##--+.
+                                                       .##*.*-.
+                                                        .=#*.-#.
+                                                       ....++-.#-.
+                                                     :%=:+-#*#*#@##-..
+                                                   -#=.   :-=+*+=+%**#%@*.
+                        .:-++**#***++***+=-:.    .-@#:  .:++-+#+*+#**- .%@+.
+                   ..-*#-. ..:+*+==---==+*%%@#...+@*@-.-#+#++++=+*+*.   =%@%.
+              ..-%*:.      .:%*-..:=+#@%*#*=%*@%-.      :%@#%+=-#. ..:.=+*%@@+..
+            .:...        .:.=%+*#%%#***#@@@@+..     .-*..*@@%##-. .=..**%%=@@%+@+.
+                       ..==+#**###****###@@:...      -***@#%@@##-. .-+###=++%@%%@@+..
+                     .-*-**+#*+*+--+#@%*#@=*==-      .=+==*##@%@@*. :=+:*::+*@%@**%@#:.
+                   ...:#+#+#=. .:+*-.:=#*@%+*+*.           ..--+%@@-.. .--***#+-@#==+@+.
+                  :*:%+#=#. .**..=#-.-%%@*=*=#%.   .           .:+@@@::#+=%@*#+**@@@%%@=
+                .*=#+#+*..-#-.=@=-#+:..**#+-...  .++=-.         ..-##%#*+%%***=#+#@#*#@%.
+              .-+*=#**. :#-..+:-#:.  -=+::.     ...*@*:-          .-=+*%#+%#++@#@%*@#*#@+.
+            .:*=+=%*: .=+. .=.+=.   .*-:.       -*::-@*+=.       ..:..-+##+*%#++*@@@@*+#@@=.
+          ..*:*:%#.  .*-...*.=-     =+:          .+%*%@@#=:..   :+##:...::%@=@#*++@@@*+##*@@-
+         .+-*-%=.   .%:  .+.-*.     =*--.          .=@@@@**..   .=#.*+-..+++##@@=#+@#-%*-+%%+
+        ==*#=..    .+-: .*..*.      =##+=.  ..         .-#@@%==-.=-*+:--@#-+**+@%@@@%##+#*+@:
+      :*++.      .+-=. .=..+-      .###-.  .*:.           .:+@%+@***-==@***==-=+#%@@@@@#%%*.
+    .+**..      -*.*:  :-.-#.      :%+.:.:.+#=...             .+%@@%+@%+*+.. .+=*+#@@@%..
+   .*=*.::..  .#-.+:-.:=..#. .     +=.-::=.#*++=-.          .... :*@#=#+*::..=*#@@@*%@@@:
+  .%==::+.+.::*.-+=...=..%:..=:.  .*-..:-+.:@*-#++-:.-:.   .=+-.....#@*%+@#==#%=#-+#+%#@#:
+ .#=+:=+:=:+=:.=-+: --..%+.*.+=.  .#*+..==%*.=#*@#+==-.....+*++==.-+##+@@@*-*=@@+-++=%+@@+=
+.+++:==.=.++-.=:+. .- :@@:-+.#+:=..+%#=:..-#--%*-#@%%*++-=.==-:=-*#@#%+%+*#@%#**@#*-+++@@##=.
+:*=:=+-*.*=-.-=*: .*.:*@%.-=+%*+=.==#=::=. .=#++%-:=:#%@#*#+....:**#=#%+*%#%+@@#+#+=#=#@%@#*=
+-=#=++-:=:*.--=.. =.:@%@+.+-@*#%-=+-*-:-*.=:.=*-.-.=.++.-+@@*+=-=*-=++-#:+*-%:#*@@%%*##%@##+**.
+=++*+:*-=%..+-=*..= *+@@-==+*@%**#-*+*#+:+-****-.=.=*===:+:=#@@#%*--#*:+=:+%-#+%@@@##*@:+@#%***.
++%=+*#:=+:.#-==..*..@@*==:-#=%*%%%%*+@@@@@*#%@@#*+:+%+=+:=#+%##+@@##%*-:*+=++:*%@@@++*@@#:@@#-##.
+*%=%===-*.--=.=..+.=#*%@*+#=%##*#%@##*@@@#%*+%@@@@-****#@==@#%+#*%%%%@%*%%=-+=+#@+#++#=*%--#%%+@*.
+*#:*+:*#..=:-#. -..%*@@+%%=%*%%*%@%@%#%%@@+*-*=*@@%%=%@%@+=*+#-:+@#**%+@@@%@@@#-%@#@*:*%@.   .##@*.
+:=:=*+=+ :=*-:-.= :@**%@@%#:%@@*%*@#%%%%@@@@%@*%@%@@@@@@@@#%#+#*+#+=##=+@%++%=:*@@#-%@@@:      .#@=
+..-=##=-.*-=-.=:= +**#@@%:++#%%@*@+@+%+%+@#@@#-:....   ...-#@@@%@%@@%%@%%%%@#.  ...::-:.        .:%
+  -=+%=:.#-:--:*..%=*@#@#%+%@%@#%%%@%@@@*-..                    ............
+  .:-#+.:*=--*-:.-#@+*%@%#%%#@%@%%@#+:..
+    .+*.:==+-#-..@#**=#@%#@+@%@@*:
+     .=.-:=.#. .+@%:*%%#%#@@@@-.
+        ..--...##@=%+*@%@%#-..
+      .=*-.  .#-#-#*#+-..
+    .*=.   .+#=#+@%*.
+    =:   .+%=%+@@*.
+    .*+-#@#*=+.                                                                                    </pre>
+
+  <h1>Miriel</h1>
+  <p class="tagline">Your words deserve more than a forgotten note.</p>
+
+  <div class="explanation">
+    <p>Miriel turns written reflection into signals you can revisit and verify.</p>
+    <p>We care about measurement, not vibes.</p>
+    <p>It is built to keep meaning intact as time passes.</p>
+  </div>
+
+  <div class="manifesto">
+    <p>Quiet inputs. Clear traces.</p>
+    <p>What matters is what can be checked later.</p>
+    <p>Memory without measure fades.</p>
+    <p>Measure without verification is theater.</p>
+  </div>
+
+  <div class="links">
+    <h2>Links</h2>
+    <dl>
+      <dt>App</dt>
+      <dd><a href="https://miriel.app">miriel.app</a></dd>
+      <dt>X</dt>
+      <dd><a href="https://x.com/miriel_app">x.com/miriel_app</a></dd>
+      <dt>Discord</dt>
+      <dd><a href="https://discord.gg/PnHNNtJNjn">discord.gg/PnHNNtJNjn</a></dd>
+      <dt>Telegram</dt>
+      <dd><a href="https://t.me/miriel_communtiy">t.me/miriel_communtiy</a></dd>
+      <dt>Apply</dt>
+      <dd><a href="https://forms.gle/jVycpupWswE8sUhW8">forms.gle/jVycpupWswE8sUhW8</a></dd>
+    </dl>
+  </div>
+
+  <div class="credit">
+    <p>A project by <a href="/">Arkenstone Labs</a>.</p>
+    <p><a href="mailto:contact@arkenstone-labs.com">contact@arkenstone-labs.com</a></p>
+  </div>
+
+  <div class="disclaimer">
+    <p>Materials here are for illustration and discussion only and do not constitute an offer.</p>
+    <p>Forecasts, simulations, and prior results are not guarantees.</p>
+  </div>
+
+</div>
+</div>
+</body>
+</html>
